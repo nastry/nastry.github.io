@@ -1,0 +1,61 @@
+body{
+    overflow-x: hidden;
+    background-color:darkolivegreen
+}
+header {
+    border-bottom: 2px solid darkolivegreen;
+    color: tomato;
+    background-color: lightgray;
+    border:3px solid tomato;
+}
+h1, h2, h3{
+    color: red;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+section.container-md{
+    background-color:aquamarine;
+}
+main{
+    background-color:olive;
+}
+.img-ref{
+    width: 35rem;
+}
+.grey-div
+{
+    background-color: rgb(248, 203, 151);
+    padding: 0.7rem;
+    width: 100%;
+}
+.nav-ref{
+    font-size: 20px;
+    border: 2px outset #912b2b;
+    background-color: #e07f7f;
+}
+footer {
+    text-align: center;
+    margin: 0;
+    background-color:chocolate;
+    margin-top: 15px;
+    height: 50px;
+    padding-top: 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    border:3px solid tomato;
+}
+ .copyrate{
+    color: rgb(210, 210, 210);
+    font-size: 1.4em;
+} 
+.even{
+    background-color: rgb(255, 121, 121);;
+}
+th, td{
+    background-color: rgb(203, 203, 203);
+}
+table
+{
+    height: 25vw;
+}
