@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4zad</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="4zad">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-2">
+            <div class="row row-cols-auto justify-content-between justify-content-md-center align-items-center">
+                <div class="col ms-2">
+                    <img src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo-ny-2016.png" alt="Логотип" width="150" height="100">
+                </div>
+                <div class="col me-2">
+                    <h1 class="display-4">Это сайт
+
+
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-md pt-3 pe-0 ps-0 p-md-3 d-flex flex-column">
+            <nav class="grey-div container-fluid">
+                <div class="col-8 d-md-flex justify-content-md-around col-md-auto">
+                    <a href="#refs" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Ссылки
+                        </div>
+                    </a>
+                    <a href="#table" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Таблица
+                        </div>
+                    </a>
+                    <a href="#form" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Анкета
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div id="refs" class="grey-div mt-3">
+                <h2>Список гиперссылок</h2>
+                <ol>
+                    <li><a href="http://example.com">гиперссылка на example.com</a> </li>
+                    <li><a href="https://example.com">гиперссылка на example.com c протоколом</a></li>
+                    <li><a href="ftp://examle.com/catalog/file.txt">ссылку на файл на сервере FTP без авторизации</a></li>
+                    <li><a href="ftp://login.password@examle.com/catalog/file.txt">ссылку на файл на сервере FTP с авторизацией</a></li>
+                    <li><a href="https://example.com/catalog#foto">ссылку на фрагмент страницы некоторого сайта</a></li>
+                    <li><a href="#foto">ссылку на фрагмент текущей страницы</a></li>
+                    <li><a href="http://example?par1=p1&par2=p2">ссылку с двумя параметрами в URL</a></li>
+                    <li>
+                        "список ссылок основной навигации сайта с подписями title"
+                    <ul>
+                        <li><a>1список</a></li>
+                        <li><a>2список</a></li>
+                        <li><a>3список</a></li>
+                    </ul></li>
+                    <li> <a title="ничего">Ссылка без href</a></li>
+                    <li> <a href="#">ссылку с пустым href</a></li>
+                    <li><a href="http://kubsu.ru" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a> </li>
+                    <li><a href="http://example.com" rel="nofollow"><!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+                    <li><p>"контекстная"
+                        <a href="http://example.com">ссылка</a>
+                        в тексте абзаца
+                    <li><a href="https://ecoportal.info/" ><img src="https://ecoportal.info/wp-content/uploads/2020/10/golosemennie-rasteniya-544x467.jpg" alt="описание"></a></li>
+                  
+                    <li>Ссылки из прямоугольных и круглых областей картинки:<br><img class="img-fluid img-ref"
+                            src="https://oir.mobi/uploads/posts/2020-01/1578218664_19-46.jpg" alt="фигуры"
+                            usemap="#figures">
+                        <map name="figures">
+                            <area alt="Круг" shape="circle"
+                                href="https://ru.wikipedia.org/wiki/Круг,_Михаил_Владимирович" coords="120,250,75"
+                                title="Круг">
+                            <area alt="Прямоугольник" shape="rect" href="https://ru.wikipedia.org/wiki/Прямоугольник"
+                                coords="30,15,215,125" title="Прямоугольник">
+                        </map>
+                    </li>
+                    <li><a href="foto">относительную на страницу в текущем каталоге (дляhttps://ex.com/galery/foto)</a></li>
+                    <li><a href="foto/dogs">относительную на страницу в каталоге foto (дляhttps://ex.com/galery/foto/dogs)</a></li>
+                    <li><a href="../foto">относительную на страницу в каталоге уровнем выше текущегo(для https://ex.com/galery/foto/dogs)</a></li>
+                    <li><a href="../../dogs">относительную на страницу в каталоге двумя уровнями выше; (для https://ex.com/galery/foto/dogs</a></li>
+                    <li><a href="/"> сокращенную на главную</a></li>
+                    <li><a href="galery/foto">сокращенную ссылку на внутреннюю (для https://ex.com/galery/foto)</a>
+                    </li>
+                 </ol>
+            </div>
+            <div id="table" class="grey-div mt-3 mb-3r order-1 order-md-0">
+                <h2>Таблица</h2>
+                <table class="table-bordered border-dark text-center col-4">
+                    <thead>
+                        <tr>
+                            <th>r</th>
+                            <th class="even">t</th>
+                            <th>u</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="even">i</td>
+                            <td>o</td>
+                            <td class="even">p</td>
+                        </tr>
+                        <tr>
+                            <td>k</td>
+                            <td class="even">l</td>
+                            <td>m</td>
+                        </tr>
+                        <tr>
+                            <td class="even">n</td>
+                            <td>b</td>
+                            <td class="even">v</td>
+                        </tr>
+                        <tr>
+                            <td rowspan=2>x</td>
+                            <td class="even">z</td>
+                            <td>w</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="even">g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="grey-div mt-3" id="form">
+                <h2>Анкета</h2>
+                <form>
+                    <p>
+                        <b>Ваше имя</b><br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <b>Электронная почта</b><br>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <b>Дата рождения</b><br>
+                        <input type="date" name="birthdate">
+                    </p>
+                    <p>
+                        <b>Пол</b><br>
+                        <input type="radio" name="sex" value="male">Мужской<br>
+                        <input type="radio" name="sex" value="female">Женский
+                    </p>
+                    <p>
+                        <b>Количество конечностей</b><br>
+                        <input type="radio" name="limbs" value="2">2<br>
+                        <input type="radio" name="limbs" value="3">3<br>
+                        <input type="radio" name="limbs" value="4">4<br>
+                    </p>
+                    <p>
+                        <b>Сверхспособности</b><br>
+                        <select>
+                            <option disabled selected>Выберете сверхспособность</option>
+                            <option value="fly">Левитация</option>
+                            <option value="immortality">Бессмертие</option>
+                            <option value="transparency">Прохождение сквозь стены</option>
+                        </select>
+                    </p>
+                    <p>
+                        <b>Биография</b><br>
+                        <textarea name="biography" placeholder="Введите вашу биографию"></textarea>
+                    </p>
+                    <p>
+                        <strong>С контрактом ознакомлен</strong>
+                        <input type="checkbox" name="approval" value="agree">
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="p-1">
+        <h3 class="copyrate">(с)Рыженкова Анастасия</h3>
+    </footer>
+
+</body>
+
+</html>
